@@ -38,10 +38,10 @@ The GCP bucket will be used to store the data from the car-prices.zip file in a 
         a. Replace the project ID with your GCP project ID
         b. Replace the region with your GCP region
     2. For the bucket
-        a. Replace name with your bucket name
+        a. Replace bucket name with your bucket name
         b. Replace the bucket location with your bucket location
     3. For the dataset
-        a. Replace name with the dataset name
+        a. Replace dataset name with the dataset name
         b. Replace the project ID with your GCP project ID
         c. Replace the dataset location with your dataset location
 
@@ -63,7 +63,15 @@ Then from the terraform directory we execute:
 
 The bucket is created in our GCP storage and the dataset will be created in our bigquery datasets.
 
-- Run Mage
+**Run Mage**  
+
+Before running Mage do the following changes to the files:  
+
+  1. In bl_upload_data_to_gcs_partitioned.py replace bucket name with your bucket name and the project ID with your   GCP project ID.
+  2. In bl_upload_data_to_gcs.py replace bucket name with your bucket name.
+  3. In bl_create_partitioned_table.py replace dataset ID with your dataset ID
+     
+
 Used instructions from mage.ai website:
 
 https://docs.mage.ai/getting-started/setup
