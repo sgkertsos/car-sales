@@ -71,6 +71,7 @@ Before running Mage do the following changes to the files:
   2. In bl_upload_data_to_gcs.py replace bucket name with your bucket name.
   3. In bl_create_partitioned_table.py replace dataset ID with your dataset ID
   4. In bl_load_data_from_gcs.py replace bucket name with your bucket name.
+  5. Paste the contents of your service account json file to the keys/mage_service_account.json file. 
      
 Instructions were used from mage.ai website:
 
