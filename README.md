@@ -12,7 +12,8 @@ as a zip file.
 
 The file can also be found in the data folder.
 
-**First steps**
+**First steps**  
+
 Create a folder in your hard drive:  
 
 mkdir car-sales  
