@@ -2,10 +2,6 @@ This is the final project for the DataTalks Club Data Engineering Zoomcamp 2024.
 
 In this project we will display used car sales in the United States.
 
-First of all you have to clone this project by typing:
-
-git clone https://github.com/dgkertsos/car-sales.git
-
 **Dataset**  
 
 We will use the Vehicles Sales dataset from Kaggle. The dataset can be found in the URL below:  
@@ -15,6 +11,19 @@ https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data
 as a zip file.
 
 The file can also be found in the data folder.
+
+**First steps**
+Create a folder in your hard drive:  
+
+mkdir car-sales  
+
+Change to the folder you just created:  
+
+cd car-sales  
+
+Then clone this project by typing:
+
+git clone https://github.com/dgkertsos/car-sales.git
 
 **Create a GCP bucket and a BigQuery Dataset**  
 The GCP bucket will be used to store the data from the car-prices.zip file in a partitioned parquet format. Then the data will be transferred to a BigQuery table which is stored in the created dataset. We will do the transfer with the help of Mage.
