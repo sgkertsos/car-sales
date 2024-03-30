@@ -18,11 +18,11 @@ The file can also be found in the data folder.
 
 Create a folder in your hard drive:  
 
-mkdir car-sales  
+mkdir project   
 
 Change to the folder you just created:  
 
-cd car-sales  
+cd project  
 
 Then clone this project by typing:
 
