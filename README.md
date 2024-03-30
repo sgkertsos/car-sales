@@ -16,7 +16,7 @@ as a zip file.
 
 The file can also be found in the data folder.
 
-**Create a GCP bucket and a BigQuery Dataset** 
+**Create a GCP bucket and a BigQuery Dataset**  
 The GCP bucket will be used to store the data from the car-prices.zip file in a partitioned parquet format. Then the data will be transferred to a BigQuery table with the help of Mage.
 
  For this we will use terraform which must be installed on our computer. Then we have to modify the main.tf file located in the terraform folder. We are going to make the following changes:
