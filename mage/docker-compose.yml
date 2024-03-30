@@ -1,0 +1,23 @@
+version: '3'
+services:
+  magic:
+    image: mageai/mageai:latest
+    command: mage start ${PROJECT_NAME}
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      USER_CODE_PATH: /home/src/${PROJECT_NAME}
+      ENV: ${ENV}
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/home/src/
+      - ./data_exporters:/home/src/${PROJECT_NAME}/data_exporters
+      - ./data_loaders:/home/src/${PROJECT_NAME}/data_loaders
+      - ./pipelines:/home/src/${PROJECT_NAME}/pipelines
+      - ./transformers:/home/src/${PROJECT_NAME}/transformers
+      - ./io_config.yaml:/home/src/${PROJECT_NAME}/io_config.yaml
+    restart: on-failure:5
