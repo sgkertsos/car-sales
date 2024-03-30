@@ -29,6 +29,7 @@ Then clone this project by typing:
 git clone https://github.com/dgkertsos/car-sales.git
 
 **Create a GCP bucket and a BigQuery Dataset**  
+
 The GCP bucket will be used to store the data from the car-prices.zip file in a partitioned parquet format. Then the data will be transferred to a BigQuery table which is stored in the created dataset. We will do the transfer with the help of Mage.
 
  For this we will use terraform which must be installed on our computer. Then we have to modify the main.tf file located in the terraform folder. We are going to make the following changes:
