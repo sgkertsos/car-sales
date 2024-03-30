@@ -70,23 +70,24 @@ Before running Mage do the following changes to the files:
   1. In bl_upload_data_to_gcs_partitioned.py replace bucket name with your bucket name and the project ID with your   GCP project ID.
   2. In bl_upload_data_to_gcs.py replace bucket name with your bucket name.
   3. In bl_create_partitioned_table.py replace dataset ID with your dataset ID
+  4. In bl_load_data_from_gcs.py replace bucket name with your bucket name.
      
-
-Used instructions from mage.ai website:
+Instructions were used from mage.ai website:
 
 https://docs.mage.ai/getting-started/setup
 
-For this you must have git and Docker installed. Then you run the following commands:
+For this you must have git and Docker installed. Then you run the following commands:  
 
-cd mage 
-cp dev.env .env 
-rm dev.env 
-docker-compose up
+cd mage  
+cp dev.env .env  
+rm dev.env  
+docker-compose up  
 
-Forward port 6789 on your local machine.
+Forward port 6789 on your local machine.  
 
-Then you can access Mage by typing:
+Then you can access Mage by typing:  
 
-http://localhost:6789
+http://localhost:6789  
+
 
 in your browser.
