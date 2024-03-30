@@ -19,7 +19,7 @@ def load_from_google_cloud_storage(*args, **kwargs):
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = 'de-zoomcamp-car-sales'
+    bucket_name = '<Your Unique Bucket Name>'
     object_key = 'car_sales.parquet'
 
     return GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).load(
