@@ -39,3 +39,10 @@ resource "google_storage_bucket" "data-lake-bucket" {
 
   force_destroy = true
 }
+
+
+resource "google_bigquery_dataset" "dataset" {
+  dataset_id = "<The Dataset Name You Want to Use>"
+  project    = "<Your Project ID>"
+  location   = "<Your Location>"
+}
