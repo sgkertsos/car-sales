@@ -37,7 +37,7 @@ default:
   DUCKDB_DATABASE: database
   DUCKDB_SCHEMA: main
   # Google
-  GOOGLE_SERVICE_ACC_KEY_FILEPATH: "home/src/keys/mage_service_account.json"
+  GOOGLE_SERVICE_ACC_KEY_FILEPATH: "/home/src/keys/mage_service_account.json"
   GOOGLE_LOCATION:
   # MongoDB
   # Specify either the connection string or the (host, password, user, port) to connect to MongoDB.
