@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
 # Credentials only needs to be set if you do not have the GOOGLE_APPLICATION_CREDENTIALS set
-  credentials = "<Path to your service account key file>"
+  credentials = "./keys/tf_service_account.json"
   project = "<Your Project ID>"
   region  = "<Your Region>"
 }
