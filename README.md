@@ -2,6 +2,10 @@ This is the final project for the DataTalks Club Data Engineering Zoomcamp 2024.
 
 In this project we will display used car sales in the United States.
 
+First of all you have to clone this project by typing:
+
+git clone https://github.com/dgkertsos/car-sales.git
+
 **Dataset**  
 
 We will use the Vehicles Sales dataset from Kaggle. The dataset can be found in the URL below:  
@@ -12,9 +16,9 @@ as a zip file.
 
 The file can also be found in the data folder.
 
-**Moving the data to a bucket**
- - Create a GCP bucket 
- 
+**Create a GCP bucket and a BigQuery Dataset** 
+The GCP bucket will be used to store the data from the car-prices.zip file in a partitioned parquet format. Then the data will be transferred to a BigQuery table with the help of Mage.
+
  For this we will use terraform which must be installed on our computer. Then we have to modify the main.tf file located in the terraform folder. We are going to make the following changes:
 
     1. For the provider
@@ -23,8 +27,12 @@ The file can also be found in the data folder.
     2. For the bucket
         a. Replace name with your bucket name
         b. Replace the bucket location with your bucket location
+    3. For the dataset
+        a. Replace name with the dataset name
+        b. Replace the project ID with your GCP project ID
+        c. Replace the dataset location with your dataset location
 
-We also have to copy our service account json file to the keys directory or paste the contents of our json file to the tf_service_account.json file. 
+We also have to paste the contents of our service account json file to the keys/tf_service_account.json file. 
 
 NOTE:
 The service account can be created with the following roles:
@@ -40,7 +48,7 @@ Then from the terraform directory we execute:
 
     Type yes and hit Enter.
 
-The bucket is created in our GCP storage.
+The bucket is created in our GCP storage and the dataset will be created in our bigquery datasets.
 
 - Run Mage
 Used instructions from mage.ai website:
