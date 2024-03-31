@@ -67,11 +67,9 @@ The bucket is created in our GCP storage and the dataset will be created in our 
 
 Before running Mage do the following changes to the files:  
 
-  1. In bl_upload_data_to_gcs_partitioned.py replace bucket name with your bucket name and the project ID with your   GCP project ID.
-  2. In bl_upload_data_to_gcs.py replace bucket name with your bucket name.
-  3. In bl_create_partitioned_table.py replace dataset ID with your dataset ID
-  4. In bl_load_data_from_gcs.py replace bucket name with your bucket name.
-  5. Paste the contents of your service account json file to the keys/mage_service_account.json file. 
+  1. In bl_upload_data_to_gcs.py replace bucket name with your bucket name.
+  2. In bl_load_data_from_gcs.py replace bucket name with your bucket name.
+  3. Paste the contents of your service account json file to the keys/mage_service_account.json file. 
      
 Then you run the following commands:  
 
