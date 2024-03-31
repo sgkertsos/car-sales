@@ -73,22 +73,23 @@ Before running Mage do the following changes to the files:
   4. In bl_load_data_from_gcs.py replace bucket name with your bucket name.
   5. Paste the contents of your service account json file to the keys/mage_service_account.json file. 
      
-Instructions were used from mage.ai website:
-
-https://docs.mage.ai/getting-started/setup
-
-For this you must have git and Docker installed. Then you run the following commands:  
+Then you run the following commands:  
 
 cd mage  
 cp dev.env .env  
 rm dev.env  
+
+And finally:  
+
 docker-compose up  
+
+NOTE  
+You have to install docker first to make the last command run.  
 
 Forward port 6789 on your local machine.  
 
 Then you can access Mage by typing:  
 
 http://localhost:6789  
-
 
 in your browser.
