@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: avian-casing-411221
+    schema: de_zoomcamp_car_sales
+
+    tables:
+      - name: car_sales
