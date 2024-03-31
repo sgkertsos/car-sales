@@ -7,10 +7,9 @@ ARG USER_CODE_PATH=/home/src/${PROJECT_NAME}
 COPY requirements.txt ${USER_CODE_PATH}/requirements.txt 
 
 # Copy pipelines and blocks
-COPY data_exporters/bl_create_partitioned_table.py ${USER_CODE_PATH}/${PROJECT_NAME}/data_exporters/bl_create_partitioned_table.py
+COPY custom/bl_create_partitioned_table.sql ${USER_CODE_PATH}/${PROJECT_NAME}/custom/bl_create_partitioned_table.sql
 COPY data_exporters/bl_transfer_data_from_gcs_to_bq.py ${USER_CODE_PATH}/${PROJECT_NAME}/data_exporters/bl_transfer_data_from_gcs_to_bq.py
 COPY data_exporters/bl_upload_data_to_gcs.py ${USER_CODE_PATH}/${PROJECT_NAME}/data_exporters/bl_upload_data_to_gcs.py
-COPY data_exporters/bl_upload_data_to_gcs_partitioned.py ${USER_CODE_PATH}/${PROJECT_NAME}/data_exporters/bl_upload_data_to_gcs_partitioned.py
 COPY data_loaders/bl_load_data_from_csv.py ${USER_CODE_PATH}/${PROJECT_NAME}/data_loaders/bl_load_data_from_csv.py
 COPY data_loaders/bl_load_data_from_gcs.py ${USER_CODE_PATH}/${PROJECT_NAME}/data_loaders/bl_load_data_from_gcs.py
 COPY pipelines/csv_to_gcs/metadata.yaml ${USER_CODE_PATH}/${PROJECT_NAME}/pipelines/csv_to_gcs/metadata.yaml
