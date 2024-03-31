@@ -15,6 +15,7 @@ services:
       - 6789:6789
     volumes:
       - .:/home/src/
+      - ./custom:/home/src/${PROJECT_NAME}/custom
       - ./data_exporters:/home/src/${PROJECT_NAME}/data_exporters
       - ./data_loaders:/home/src/${PROJECT_NAME}/data_loaders
       - ./pipelines:/home/src/${PROJECT_NAME}/pipelines
