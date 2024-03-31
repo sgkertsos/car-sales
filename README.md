@@ -96,3 +96,6 @@ Select the **csv_to_gcs** pipeline and execute each block one by one or else sel
 
 After the pipeline is executed a **car_sales.parquet** file is created in the **de_zoomcamp_car_sales** bucket.  
 
+Select the **gcs_to_bq** pipeline and execute each block one by one or else select the last block, click on **...** and then select **Execute with all upstream blocks**  
+
+After the pipeline is executed a partitioned table called **car_sales** is created in the **de_zoomcamp_car_sales** dataset and then all the data from the bucket are transfered to this table. There should be 558811 records in the table.  
