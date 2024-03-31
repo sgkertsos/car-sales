@@ -92,7 +92,7 @@ http://localhost:6789
 
 in your browser.
 
-Select the csv_to_gcs pipeline and execute each block one by one or else you can select the last block, click on ... and then select **Execute with all upstream blocks**  
+Select the **csv_to_gcs** pipeline and execute each block one by one or else select the last block, click on **...** and then select **Execute with all upstream blocks**  
 
 After the pipeline is executed a **car_sales.parquet** file is created in the **de_zoomcamp_car_sales** bucket.  
 
