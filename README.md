@@ -99,3 +99,22 @@ After the pipeline is executed a **car_sales.parquet** file is created in the **
 Select the **gcs_to_bq** pipeline and execute each block one by one or else select the last block, click on **...** and then select **Execute with all upstream blocks**  
 
 After the pipeline is executed a partitioned table called **car_sales** is created in the **de_zoomcamp_car_sales** dataset and then all the data from the bucket are transfered to this table. There should be 558811 records in the table.  
+
+**Create a model in dbt Cloud**
+
+Sign up for a free account id dbt cloud  
+
+Go to Account Settings, Projects and then click +New Project  
+
+Enter a Project name, eg car-sales  and then click Continue  
+
+Choose a connection, in our case BigQuery and click Next.
+
+Click Upload a Service Account JSON file and select the JSON file you have downloaded from Google Cloud Platform.  
+
+In the Location field you can type your preffered Google Cloud Platform location where you want your datasets to be created.  
+
+In the Dataset field, type the name for the Dataset which will be crated by the dbt cloud platform, eg dbt_car_sales.  
+
+Click on the Test Connection button. Dbt cloud will try to connect to your Google Cloud Platform. If everything is OK, Next button appears. Click on it to continue.  
+
