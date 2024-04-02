@@ -118,9 +118,9 @@ In the Dataset field, type the name for the Dataset which will be crated by the 
 
 Click on the Test Connection button. Dbt cloud will try to connect to your Google Cloud Platform. If everything is OK, Next button appears. Click on it to continue.  
 
-Then we have to setup the repository which means where our dbt cloud project is stored. Select Git Clone and in the GIT URL type the following address:  
+Then we have to setup the repository which means where our dbt cloud project is stored. Select Managed and in the Repository name type the following address:  
 
-git@github.com:dgkertsos/car-sales.git  
+https://github.com/dgkertsos/car-sales.git
 
 Click the Import Button  
 
