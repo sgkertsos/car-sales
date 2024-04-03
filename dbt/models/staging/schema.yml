@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: staging
-    database: avian-casing-411221
+    database:
     schema: de_zoomcamp_car_sales
 
     tables:
